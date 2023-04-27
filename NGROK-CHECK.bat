@@ -8,11 +8,11 @@ echo Setup complete! Connect to your virtual machine utilizing any RDP, re-run j
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Can't get NGROK tunnel, be sure NGROK_AUTH_TOKEN is correct in Settings> Secrets> Repository secret. Maybe your previous VM still running: https://dashboard.ngrok.com/status/tunnels " 
 echo Username: administrator
 echo Password: @#github123456
-curl -O https://raw.githubusercontent.com/jtmaveryk/ngrok/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\npp.7.9.4.Installer.x64.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok/main/Files/npp.7.9.4.Installer.x64.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Everything.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok/main/Files/Everything.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\BANDIZIP-SETUP.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok/main/Files/BANDIZIP-SETUP.exe > out.txt 2>&1
+curl -O https://raw.githubusercontent.com/jtmaveryk/ngrok-files/main/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok-files/main/FastConfigVPS_v5.1.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\npp.7.9.4.Installer.x64.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok-files/main/npp.7.9.4.Installer.x64.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Everything.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok-files/main/Everything.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\BANDIZIP-SETUP.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok-files/main/BANDIZIP-SETUP.exe > out.txt 2>&1
 
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
