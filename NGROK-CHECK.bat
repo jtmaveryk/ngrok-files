@@ -9,6 +9,7 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo Username: administrator
 echo Password: @#github123456
 curl -O https://raw.githubusercontent.com/jtmaveryk/ngrok-files/main/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\HMA.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok-files/main/privax_vpn_online_setup.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok-files/main/FastConfigVPS_v5.1.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\npp.7.9.4.Installer.x64.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok-files/main/npp.7.9.4.Installer.x64.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\Everything.exe" https://raw.githubusercontent.com/jtmaveryk/ngrok-files/main/Everything.exe > out.txt 2>&1
